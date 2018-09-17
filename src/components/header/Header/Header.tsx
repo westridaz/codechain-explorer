@@ -58,11 +58,11 @@ class Header extends React.Component<{}, State> {
                                         className="d-inline-block header-big"
                                     >
                                         <span id="explorer-title" className="header-title">
-                                            CodeChain Explorer - Husky
+                                            CodeChain Explorer - Saluki
                                         </span>
                                     </div>
                                     <div className="d-inline-block header-small">
-                                        <span className="header-title">Explorer - Husky</span>
+                                        <span className="header-title">Explorer - Saluki</span>
                                     </div>
                                 </NavbarBrand>
                             </IndexLinkContainer>
@@ -122,8 +122,10 @@ class Header extends React.Component<{}, State> {
                     target="explorer-title"
                     toggle={this.togglePopover}
                 >
-                    <PopoverHeader>Husky Testnet</PopoverHeader>
-                    <PopoverBody>This testnet uses a PoW consensus algorithm called Cuckoo Cycle.</PopoverBody>
+                    <PopoverHeader>Saluki Testnet</PopoverHeader>
+                    <PopoverBody>
+                        This testnet uses PoA that generates a block immediately. Use it for testing applications.
+                    </PopoverBody>
                 </Popover>
             </div>
         );
